@@ -8,12 +8,19 @@ import javax.swing.*;
 public class KeyListener implements java.awt.event.KeyListener {
 
     JFrame frame;
+    JPanel panel;
+    JLabel label;
     public KeyListener(){
 
         frame = new JFrame();
+        panel = new JPanel();
+        label = new JLabel("Morse Practice  @ = ', ? = Shift");
+
         frame.addKeyListener(this);
-        frame.setSize(800,400);
+        frame.setSize(400,100);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.add(panel);
+        panel.add(label);
         frame.setVisible(true);
 
     }
@@ -25,6 +32,27 @@ public class KeyListener implements java.awt.event.KeyListener {
         System.out.println(key);
 
         switch (key){
+
+            //Punctuation marks
+            case 44:
+                play(",.wav");
+                break;
+            case 46:
+                play("..wav");
+                break;
+            case 47:
+                play("Slash.wav");
+                break;
+            case 222:
+                play("@.wav");
+                break;
+            case 16:
+                play("QMark.wav");
+                break;
+            case 61:
+                play("=.wav");
+                break;
+
 
             //Numbers
             case 48:
