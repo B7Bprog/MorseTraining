@@ -1,0 +1,3 @@
+Please note: 
+
+- Following two characters '@' and '?' have been set this way: @ = ', ? = Shift

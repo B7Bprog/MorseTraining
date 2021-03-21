@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MorseTraining:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MorseTraining_jar</output-path>
+    <root id="archive" name="MorseTraining.jar">
+      <element id="module-output" name="MorseTraining" />
+    </root>
+  </artifact>
+</component>

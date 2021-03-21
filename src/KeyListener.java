@@ -12,15 +12,16 @@ public class KeyListener implements java.awt.event.KeyListener {
     JLabel label;
     public KeyListener(){
 
-        frame = new JFrame();
+        frame = new JFrame("Morse Practice by B.B.");
         panel = new JPanel();
-        label = new JLabel("Morse Practice  @ = ', ? = Shift");
+        label = new JLabel("Following two characters '@' and '?' have been set this way: @ = ', ? = Shift");
 
         frame.addKeyListener(this);
-        frame.setSize(400,100);
+        frame.setSize(460,90);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.add(panel);
         panel.add(label);
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
     }
@@ -29,7 +30,7 @@ public class KeyListener implements java.awt.event.KeyListener {
     public void keyPressed(KeyEvent e) {
             int key = e.getKeyCode();
 
-        System.out.println(key);
+        //System.out.println(key);
 
         switch (key){
 
